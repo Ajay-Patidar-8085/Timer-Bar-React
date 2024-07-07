@@ -1,0 +1,36 @@
+/* TimerBar.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.timer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 1000;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.timer-bar .timer {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .timer-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .timer-bar .offer {
+    margin-bottom: 5px;
+  }
+}
